@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #3e87f6;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 25px 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.main-content {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.profile-card {
+    text-align: center;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #3e87f6;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #3e87f6;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+h3 {
+    color: #3e87f6;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.description {
+    color: #3e87f6;
+    line-height: 1.6;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #3e87f6;
+    color: white;
+    border-radius: 50%;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-3px);
+    background-color: #3e87f6;
+}

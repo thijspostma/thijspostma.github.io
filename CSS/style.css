@@ -45,7 +45,7 @@ nav ul a {
     align-items: center;
     justify-content: space-between;
     padding: 100px 150px;
-    min-height: 100vh;
+    min-height: 100svh;
 }
 
 .main-text {
@@ -106,7 +106,7 @@ h1 {
 .main-projects {
     padding: 100px 150px;
     background-color: #f9f9f9;
-    min-height: 100vh;
+    min-height: 100svh;
 }
 
 .main-projects h2 {
@@ -346,7 +346,7 @@ body.dark .projects-map p {
         align-items: center;
         justify-content: center;
         padding: 40px 20px;
-        min-height: 100vh;
+        min-height: 100svh;
         text-align: center;
         gap: 20px;
     }
@@ -372,7 +372,7 @@ body.dark .projects-map p {
 
     .main-projects {
         padding: 80px 20px;
-        min-height: 100vh;
+        min-height: 100svh;
     }
 
     .projects-grid {

@@ -1,3 +1,4 @@
+/* Desktop */
 * {
     margin: 0;
     padding: 0;
@@ -5,9 +6,14 @@
 }
 
 body {
+    overflow-x: hidden;
+}
+
+body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ffffff;
     color: #1a1a1a;
+    overflow-x: hidden;
 }
 
 nav {
@@ -37,7 +43,6 @@ nav ul a {
 .main {
     display: flex;
     align-items: center;
-    justify-content: center;
     justify-content: space-between;
     padding: 100px 150px;
     min-height: 100vh;
@@ -281,3 +286,97 @@ body.dark .projects-map p {
     color: #aaa;
 }
 
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .main {
+        padding: 60px 60px;
+    }
+
+    h1 {
+        font-size: 52px;
+    }
+
+    .main-foto img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .main-projects {
+        padding: 60px 60px;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    nav {
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    .switch {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 64px;
+        height: 32px;
+    }
+
+    .slider::before {
+        height: 24px;
+        width: 24px;
+    }
+
+    .switch input:checked + .slider::before {
+        transform: translateY(-50%) translateX(32px);
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 20px;
+        min-height: 100vh;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .main-foto {
+        order: -1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-foto img {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .buttons {
+        justify-content: center;
+    }
+
+    .main-projects {
+        padding: 80px 20px;
+        min-height: 100vh;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

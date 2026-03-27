@@ -2,38 +2,54 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio | Thijs Postma</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thijs Postma | Software Developer</title>
     <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <div class="wrapper">
-        <nav class="sidebar">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projecten</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
 
-          <main class="main-content">
-              <div class="profile-card">
-                  <div class="image-container">
-                      <img src="./Foto's/foto.jpeg" alt="Thijs Postma">
-                  </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projecten</a></li>
+        </ul>
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider"></span>
+        </label>
+    </nav>
 
-                  <h1>Thijs Postma</h1>
-                  <h3>Software Developer</h3>
-
-                  <p class="description">
-                      Hier komt wel nog wat tekst te staan hoor rustig maar
-                  </p>
-
-                  <div class="social-icons">
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
+    <section id="home" class="main">
+        <div class="main-text">
+            <p class="greeting">Hey, ik ben Thijs 👋</p>
+            <h1><span class="blue-text">Software</span> Developer</h1>
+            <div class="buttons">
+                <a href="mailto:mail@thijspostma.dev" class="button-1">Neem contact op</a>
+                <a href="#projects" class="button-2">Mijn projecten</a>
             </div>
-        </main>
-    </div>
+        </div>
+        <div class="main-foto">
+            <img src="./Foto's/foto.jpeg" alt="Thijs Postma">
+        </div>
+    </section>
+
+    <section id="projects" class="main-projects">
+        <h2>Mijn <span class="blue-text">Projecten</span></h2>
+
+        <div class="projects-grid">
+
+            <div class="projects-map">
+                <h3>Tsjusterbier</h3>
+                <span class="status in-progress">In ontwikkeling</span>
+                <p>Een social media app waar vrienden bier kunnen posten</p>
+                <a href="#" class="project-link">Bekijk project</a>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="./JS/color-mode.js"></script>
 </body>
 </html>
